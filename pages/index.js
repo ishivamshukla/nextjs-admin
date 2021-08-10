@@ -17,7 +17,7 @@ import LoginPage from "./login";
 
 const createApolloClient = async (token) => {
     return new ApolloClient({
-        url: 'https://react-admin.hasura.app/v1/graphql',
+        uri: 'https://react-admin.hasura.app/v1/graphql',
         cache: new InMemoryCache(),
         headers: {
             'Authorization': `Bearer ${token}` || null,
