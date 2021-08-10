@@ -11,15 +11,15 @@
 
 // const history = createHistory();
 
-// const createApolloClient = async (token) => {
-//     return new ApolloClient({
-//         uri: 'https://react-admin.hasura.app/v1/graphql',
-//         cache: new InMemoryCache(),
-//         headers: {
-//             'Authorization': `Bearer ${token}`
-//         }
-//     })
-// }
+const createApolloClient = async (token) => {
+    return new ApolloClient({
+        uri: 'https://react-admin.hasura.app/v1/graphql',
+        cache: new InMemoryCache(),
+        headers: {
+            'Authorization': `Bearer ${token}`
+        }
+    })
+}
 
 // const App = () => { 
 //     const [dataProvider, setDataProvider] = useState({});
